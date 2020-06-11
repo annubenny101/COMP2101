@@ -9,5 +9,5 @@ find / -type f -executable -perm -2000 -ls 2>/dev/null | sort -k 4
 echo "Listing 10 Largest Files"
 echo "=========================="
 # using the find command, listing files by their sizes
-ind / -type f -exec ls -l --block-size=MB {} + 2>/dev/null | sort -k5 -hr |head -n 10 |awk '{print $3,$5,$10}'
+find / -type f -exec ls -l --block-size=MB {} + 2>/dev/null | sort -k5 -hr |head -n 10 |awk '{print $3,$5,$10}'
 echo ""
