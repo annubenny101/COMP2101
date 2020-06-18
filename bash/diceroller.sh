@@ -8,9 +8,9 @@
 # rolling the dice and displaying my first name by each characters
 echo "
 Rolling...
-$(( RANDOM % 6 + 1)) A
-$(( RANDOM % 6 + 1)) N
-$(( RANDOM % 6 + 1)) N
-$(( RANDOM % 6 + 1)) U
+$(( RANDOM % 4 + 1)) A
+$(( RANDOM % 4+ 1)) N
+$(( RANDOM % 4 + 1)) N
+$(( RANDOM % 4 + 1)) U
 
 "
