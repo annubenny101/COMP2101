@@ -18,6 +18,9 @@ read thirdnum
 #  the sum of the 3 numbers with a label
 sum=$(( firstnum + secondnum + thirdnum))
 
+# the difference of 3 numbers
+remainder=$((firstnum % secondnum))
+
 # displaying the divident of two numbers
 dividend=$(( firstnum / secondnum))
 fpdividend=$(awk "BEGIN{printf \"%.2f\", $firstnum/$secondnum}")
@@ -27,6 +30,6 @@ product=$(( firstnum * secondnum * thirdnum ))
 cat <<EOF
 $firstnum plus $secondnum plus $thirdnum is $sum
 $firstnum mult $secondnum mult $thirdnum is $product
-$firstnum divided by $secondnum is $dividend
+$firstnum divided by $secondnum is $dividend with remainder $remainder
   - More precisely, it is $fpdividend
 EOF
