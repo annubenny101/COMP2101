@@ -32,7 +32,7 @@ fi
 #Now, we try 5 times to get it right before failing by using if command 
 #if 5 times exceeds, displaying your account has been locked
 
-if [ $myString == $referenceString ]
+if [ $myString == $referenceString ] 
 
 then
 	echo "Correct Password"
