@@ -53,7 +53,7 @@ then
 else
       title="Day Seven"
 fi
-##########################################
+
 cat <<EOF
 
 
