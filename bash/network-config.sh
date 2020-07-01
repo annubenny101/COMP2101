@@ -81,7 +81,7 @@ echo "------------------------"
 
 
 
-# we use the hostname command to get our system name
+# we use the hostname command to get our system name 
 # the LAN name is looked up using the LAN address in case it is different from the system name
 # finding external information relies on curl being installed and relies on live internet connection
 # awk is used to extract only the data we want displayed from the commands which produce extra data
