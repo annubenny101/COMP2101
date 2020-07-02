@@ -31,7 +31,7 @@ echo "-v demonstrates verbose"
 ;;
  #this is the command to check whether the first argument is debug option.
  #if there is an argument, then a message with debug level is displayed
- #else an error message is displayed
+ #else an error message is displayed to specify a number
 -d )
   if [[ "$2" != "" ]]; then
 
