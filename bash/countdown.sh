@@ -26,9 +26,9 @@ function end_program {
 #if the user interrupt from the program, displaying a message with interrupted signal
 function interrupt {
      #if the user gives interrupt signal then, resets the sleepcount to max.
-    sleepCount=numberOfSleeps
+    sleepCount=$numberOfSleeps
     echo "You are not allowed to interrupt the program"
-    exit
+    
 }
 
 #functions are gonna catch with trap
